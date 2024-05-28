@@ -1,0 +1,73 @@
+body{
+   background-image: url("./images/nature.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.fox{
+   width: 200px;
+   height: 150px;
+   position: absolute;
+   top: 385px;
+   right:0px;
+   animation-fill-mode: forwards;
+   animation: foxwalk 17s linear infinite;
+   animation-delay: 0.3s;
+
+}
+
+@keyframes foxwalk{
+   from{
+      transform: translateX(-0px);
+   }
+   to{
+      transform: translateX(-1550px);
+   }
+}
+.cloud{
+   width: 200px;
+   height: 120px;
+   margin-top: 65px;
+   margin-left:20px;
+   animation: cloudwalk 20s linear infinite;
+   
+}
+
+@keyframes cloudwalk{
+
+   0% {
+      transform: translateY(10px,-25px ) rotate(0deg);
+    }
+    25% {
+       transform: translate(200px,-50px) rotate(5deg);
+     }
+    50% {
+      transform: translate(500px,30px) rotate(2deg);
+    }
+    100% {
+      transform: translate(1500px,30px) rotate(0deg);
+    }
+}
+
+.bird{
+   width: 250px;
+   height: 150px;
+   margin-top: 235px;
+   margin-left:120px;
+   animation: birdwalk 9s linear infinite;
+   
+}
+@keyframes birdwalk{
+
+   0% {
+      transform: translate(0px,-50px) skewX(30deg ) scale(1.8) rotateZ(-7deg);
+    }
+    25% {
+       transform: translate(350px,-100px) skewX(25deg ) scale(1.3) rotateZ(5deg);
+     }
+    50% {
+      transform: translate(700px,-350px) skewX(20deg ) scale(0.8) rotateZ(10deg);
+    }
+    100% {
+      transform: translate(900px,-420px) skewX(50deg ) scale(0.3);
+    }
+}
